@@ -1,6 +1,8 @@
 
 <?php
 
+include 'layout/header.php';
+
 $numbers = [1, 2, 3, 9 ];
 $i = 0;
 $sum = 0;
@@ -65,5 +67,7 @@ if (isset($_GET['submit-button'], $_GET['nums']))
     $numbers = $_GET['nums'];
     echo 'Összeg: '. array_sum($numbers);
 }
+
+include 'layout/footer.php';
 
 ?>

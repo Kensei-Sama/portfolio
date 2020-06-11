@@ -27,7 +27,7 @@
 		echo 'you wrote nothing';
 	}
 
-	/*
+	
 		if(isset($_POST["chance"]))
 		{
 			var_dump($_POST["chance"]);
@@ -61,7 +61,7 @@
 		
 
 		<p> lel </p> 
-	*/
+	
 ?>
 	<button type="submit"> küld </button>
 </form>

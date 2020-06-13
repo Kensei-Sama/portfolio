@@ -3,8 +3,22 @@ th{
     background-color: blue;
     border: dotted 2px red;
 } 
+
 td{
     color:#ff0000;
     background-color: 	#33cc33;
     border: solid 1px blue;
 }
+
+p{
+    color: orange;
+}
+
+.found{
+    color: green;
+}
+
+.no-found{
+    color: red;
+}
+

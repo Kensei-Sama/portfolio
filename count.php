@@ -7,9 +7,9 @@ if (isset($_GET['submitButton'], $_GET[ 'arrayLength' ])) {
     $arrayLength = $_GET['arrayLength'];
     echo $arrayLength;
 
-/*$arrayLength = rand ( 100, 10000);*/
+/* $arrayLength = rand ( 100, 10000); */
 $numbers = [];
-for ($i=0; $i < $arrayLength; $i++) 
+for ($i=0; $i < $arrayLength; $i++)
 { 
     $numbers[] = rand ( -100, 100);
 }

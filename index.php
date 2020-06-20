@@ -2,10 +2,15 @@
 include 'layout/header.php';
 ?>
 
-<a href = "php_gyak.php" > 1. alkalom </a>
-<a href = "sum.php" > összegzés </a>
-<a href = "count.php" > Megszámlálás </a>
-<a href = "choosing.php" > Eldöntés </a>
+
+<menu>
+<ul class='menu-list'>
+    <li class='menu-list-item'><a href = "php_gyak.php" > 1. alkalom </a></li>
+    <li class='menu-list-item'><a href = "sum.php" > Összegzés </a></li>
+    <li class='menu-list-item'><a href = "count.php" > Megszámlálás </a></li>
+    <li class='menu-list-item'><a href = "choosing.php" > Eldöntés </a></li>
+</ul> 
+</menu>
 
 <?php
 include 'layout/footer.php';

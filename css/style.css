@@ -22,3 +22,21 @@ p{
     color: red;
 }
 
+/*menü*/
+
+.menu-list{
+    list-style-type: none;
+}
+
+.menu-list-item a{
+    float: left;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: solid 1px rgb(5, 204, 38);
+    padding: /*top*/5px /*left and right*/8px /*bottom*/6px;
+    margin:/*top*/3px /*right*/15px /*bottom*/0 /*left*/10px;
+    
+    display: block;
+}

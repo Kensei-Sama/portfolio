@@ -7,15 +7,15 @@ include 'layout/header.php';
 //$char = chr($ascii);
 
 $chars = [];
-for ($i=0; $i < rand(5, 100); $i++) 
-{ 
+for ($i=0; $i < rand(5, 100); $i++)
+{
     $chars[] = chr(rand( 48, 122));
 }
 
 
 $searchableChar = 'A';
 $sideVar = false;
-for ($i=0; $i < count($chars); $i++) 
+for ($i=0; $i < count($chars); $i++)
 {
 
     echo $chars[$i] . ' ';
@@ -24,7 +24,7 @@ for ($i=0; $i < count($chars); $i++)
         $sideVar = true;
         break;
     }
-    
+
 }
 
 if ($sideVar)

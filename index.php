@@ -9,7 +9,7 @@ include 'layout/header.php';
     <li class='menu-list-item'><a href = "sum.php" > Összegzés </a></li>
     <li class='menu-list-item'><a href = "count.php" > Megszámlálás </a></li>
     <li class='menu-list-item'><a href = "choosing.php" > Eldöntés </a></li>
-</ul> 
+</ul>
 </menu>
 
 <?php

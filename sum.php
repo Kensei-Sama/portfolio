@@ -19,8 +19,8 @@ echo'<br>';
 
 $sum = 0;
 
-for ($i=0; $i < count($numbers); $i++) 
-{ 
+for ($i=0; $i < count($numbers); $i++)
+{
     echo $numbers[$i] . ' ';
     $sum = $sum + $numbers[$i];
 }
@@ -32,7 +32,7 @@ $sum = 0;
 foreach ($numbers as $number) 
 {
     echo $number . ' ';
-    $sum += $number; 
+    $sum += $number;
 }
 echo '<br>';
 echo 'Összeg: '. $sum;
@@ -47,8 +47,8 @@ echo 'Összeg: '. array_sum($numbers);
 <select name='nums[]' multiple size='20'>
 
 <?php
-for ($i=1; $i <= 100; $i++) 
-{ 
+for ($i=1; $i <= 100; $i++)
+{
     echo '<option value="' . $i . '">' . $i . '</option>';
 }
 ?>
@@ -60,7 +60,7 @@ for ($i=1; $i <= 100; $i++)
 
 <?php
 
-if (isset($_GET['submit-button'], $_GET['nums'])) 
+if (isset($_GET['submit-button'], $_GET['nums']))
 {
     # code...
     /*var_dump($_GET['nums']);*/

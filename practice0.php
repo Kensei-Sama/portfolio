@@ -1,6 +1,3 @@
-<?php
-include 'layout/header.php';
-?>
 
 <?php
 $arrayLength = rand(100, 200);
@@ -10,51 +7,43 @@ for ($i=0; $i < $arrayLength; $i++)
     $numbers[] = rand ( -100, 100);
 }
 //var_dump($numbers);
-echo "<br>";
 
-$evenNum = 0;
-$oddNum = 0;
+
 $zero = 0;
+$odds = [];
+$evens = [];
+
 foreach ($numbers as $number) {
   if ($number % 2 === 0) {
-    $evenNum++;
+    $evens[] = $number;
   }
   elseif ($numbers % 2 === 1)
   {
-    $oddNum++;
+    $odds[] = $number;
   }
   else {
     $zero++;
   }
 }
 
-//Sum Odds
-
-$sumOdds = 0;
-foreach ($numbers as $key => $value)
-{
-  if ($value % 2 === 0)
-  {
-    echo "$value <br>";
-  }
-  else
-  {
-    $sumOdds += $value;
-  }
-}
 
 //Divide them
+$sumOdds = array_sum($odds);
 
-$upshotOfDivision = $sumOdds / $oddNum;
+$countEvens = count($evens);
+$upshotOfDivision = $sumOdds / $countEvens;
 
 $rounding = (round($upshotOfDivision));
+
+include 'layout/header.php';
+
 
 echo '<br>';
 echo " How many nums in the array ? " . $arrayLength;
 echo '<br>';
-echo " Evens: " . $evenNum;
+echo " Evens: " . $countEvens;
 echo '<br>';
-echo " Odds: " . $oddNum;
+echo " Odds: " . count($odds);
 echo '<br>';
 echo " Zeros: " . $zero;
 echo '<br>';

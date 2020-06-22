@@ -10,6 +10,7 @@ include 'layout/header.php';
     <li class='menu-list-item'><a href = "count.php" > Megszámlálás </a></li>
     <li class='menu-list-item'><a href = "choosing.php" > Eldöntés </a></li>
     <li class='menu-list-item'><a href = "practice0.php" > Gyakorlás 0 </a></li>
+    <li class='menu-list-item'><a href = "dateSwitch.php" > Naptár </a></li>
 </ul>
 </menu>
 

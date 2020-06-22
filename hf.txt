@@ -1,5 +1,7 @@
 1, szám tömb
 
+✔️🔴
+
 -kiválassztani a páros számokat
 -megszámolni őket
 -páratlanokat meg össze adni
@@ -9,7 +11,7 @@
 
 2,
 
--constasba menteni a neveket 
+-constasba menteni a neveket
 -majd abból a constasból felhasználni
 
 -napok lekérése(ne a rövid változatot)

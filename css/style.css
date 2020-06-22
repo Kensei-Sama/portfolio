@@ -2,7 +2,7 @@ th{
     color:tomato;
     background-color: blue;
     border: dotted 2px red;
-} 
+}
 
 td{
     color:#ff0000;
@@ -37,6 +37,10 @@ p{
     border: solid 1px rgb(5, 204, 38);
     padding: /*top*/5px /*left and right*/8px /*bottom*/6px;
     margin:/*top*/3px /*right*/15px /*bottom*/0 /*left*/10px;
-    
+
     display: block;
+}
+
+body{
+  border: px;
 }

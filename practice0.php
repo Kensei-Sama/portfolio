@@ -9,7 +9,7 @@ for ($i=0; $i < $arrayLength; $i++)
 {
     $numbers[] = rand ( -100, 100);
 }
-var_dump($numbers);
+//var_dump($numbers);
 echo "<br>";
 
 $evenNum = 0;
@@ -47,6 +47,7 @@ foreach ($numbers as $key => $value)
 
 $upshotOfDivision = $sumOdds / $oddNum;
 
+$rounding = (round($upshotOfDivision));
 
 echo '<br>';
 echo " How many nums in the array ? " . $arrayLength;
@@ -61,9 +62,10 @@ echo "Sum of odds: " . $sumOdds;
 echo '<br>';
 echo "Upshot of Division: " . $upshotOfDivision;
 echo '<br>';
-
-
+echo "Upshot of Rounding previous upshot: " . $rounding;
+echo '<br>';
 ?>
+
 
 <?php
 include 'layout/footer.php';

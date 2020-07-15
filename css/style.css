@@ -29,7 +29,6 @@ p{
 }
 
 .menu-list-item a{
-    float: left;
     width: 100px;
     height: 30px;
     text-align: center;
@@ -41,6 +40,73 @@ p{
     display: block;
 }
 
+.menu-list-item , .menu-list{
+  height: 43px;
+}
+
+.menu-list-item{
+  float: left;
+}
+
+.monTue{
+  color:#ff0000;
+  background-color: 	#00ffff;
+  border: solid 1px blue;
+}
+
+.wedThu{
+  color:#40ff00;
+  background-color:#0000ff;
+  border: solid 1px green;
+}
+
+.friSatSun{
+  color:#ff0000;
+  background-color: 	#33cc33;
+  border: solid 1px orange;
+}
+
+.fix-position{
+  height: 200px;
+  width: 200px;
+  background-image: linear-gradient( red, yellow, green);
+  position: fixed;
+  bottom: 0;
+  left: 20%;
+  /* transform: rotate(45deg); */
+  border-radius: 100%;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  /* animation-delay: 2s; */
+}
+
+.fix-position:hover{
+  animation-name: fixed-animation;
+}
+
 body{
-  border: px;
+  height: 5000px;
+}
+
+@keyframes fixed-animation {
+  0%
+  {
+    background-image: linear-gradient(red, yellow, green);
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  50%
+  {
+    background-image: linear-gradient(aqua, mediumpurple, pink);
+    bottom: 10px;
+    transform: rotate(900deg);
+  }
+
+  100%
+  {
+    background-image: linear-gradient(red, yellow, green);
+    bottom: 0;
+    transform: rotate(45deg);
+  }
 }

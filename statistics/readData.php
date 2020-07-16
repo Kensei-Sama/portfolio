@@ -1,4 +1,7 @@
 <?php
+
+include_once './Population.php';
+
 $fileName = '../files/statistics/data.txt';
 
 $reader = fopen($fileName, 'r');
@@ -6,29 +9,48 @@ $populations = [];
 
 while (($line = fgets($reader)) !== false)
 {
-  $populations[] = explode('|', $line);
+  $exploded = explode('|', $line);
+  $populations[] = new Population($exploded);
 }
 
 fclose($reader);
+
+echo '<pre>';
+var_dump($populations);
+echo '</pre>';
 ?>
 
 <table>
-  <tr><th> Város </th><th> Életkor </th><th> Létszám </th></tr>
+  <tr>
+    <th> Város </th>
+    <th> Életkor </th>
+    <th> Létszám </th>
+  </tr>
   <?php foreach ($populations as $population) : ?>
     <tr>
-      <td> <?= $population[0]?> </td>
-      <td> <?= $population[1]?> </td>
-      <td> <?= $population[2]?> </td>
+      <td> <?= $population->city ?> </td>
+      <td> <?= $population->age ?> </td>
+      <td> <?= $population->number ?> </td>
     </tr>
   <?php endforeach; ?>
 </table>
 
-<table>
-  <tr><th> Csámpa </th><th> Tokyo </th><th> Sopron </th></tr>
-  <?php foreach ($populations as $population) : ?>
-    <tr>
-      <td> <?= $population[0]?> </td>
-      <td> <?= $population[2]?> </td>
-    </tr>
-  <?php endforeach; ?>
-</table>
+<?php
+function getFullPopulationOfCities(array $populations)
+{
+
+  foreach ($variable as $key => $value)
+  {
+    if ()
+    {
+
+    }
+    else
+    {
+
+    }
+  }
+  return
+}
+
+?>

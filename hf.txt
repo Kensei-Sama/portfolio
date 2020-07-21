@@ -21,3 +21,7 @@
 -kövi 2. szín
 -kövi 3 szintén új szín
 -színeket vagy classokat konstansba mentsem
+
+3,
+
+-readData.php-t átírni egy if else-es funcion-re

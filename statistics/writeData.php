@@ -3,7 +3,7 @@ $fileName = '../files/statistics/data.txt';
 $separator = '|';
 $fileLineNumber = rand(50, 100);
 
-$cities = ['Tokyo', 'Csámpa', 'Sopron'];
+$cities = ['Tokyo', 'Csampa', 'Sopron'];
 
 $writer = fopen($fileName, 'w') or die(getFileOpenError($fileName));
 

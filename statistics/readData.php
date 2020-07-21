@@ -15,9 +15,9 @@ while (($line = fgets($reader)) !== false)
 
 fclose($reader);
 
-echo '<pre>';
-var_dump($populations);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($populations);
+// echo '</pre>';
 ?>
 
 <table>
@@ -35,22 +35,52 @@ echo '</pre>';
   <?php endforeach; ?>
 </table>
 
+<table>
+  <tr>
+    <th> Város </th>
+    <th> Létszám </th>
+  </tr>
+  <?php foreach (getFullPopulationOfCities($populations) as $city => $populationOfCity) : ?>
+    <tr>
+      <td> <?= $city ?> </td>
+      <td> <?= $populationOfCity ?> </td>
+
+    </tr>
+  <?php endforeach; ?>
+</table>
+
 <?php
 function getFullPopulationOfCities(array $populations)
 {
-
-  foreach ($variable as $key => $value)
+  var_dump($populations);
+  $populationOfCities = [];
+  foreach ($populations as $populationKey => $population)
   {
-    if ()
+    if (isset($populationOfCities['Tokyo']))
     {
-
+      $populationOfCities['Tokyo'] += $population->number;
     }
-    else
+    if (isset($populationOfCities['Csampa']))
     {
-
+      $populationOfCities['Csampa'] += $population->number;
+    }
+    if (isset($populationOfCities['Sopron']))
+    {
+      $populationOfCities['Sopron'] += $population->number;
+    }
+    if (
+    !isset($populationOfCities['Sopron']) ||
+    !isset($populationOfCities['Csámpa']) ||
+    !isset($populationOfCities['Tokyo'])
+    )
+    {
+      $city = $population->city;
+      $populationOfCities[$city] = $population->number;
     }
   }
-  return
+  return $populationOfCities;
 }
+
+//array_key_exists vagy isset
 
 ?>
